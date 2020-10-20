@@ -1,0 +1,2133 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal; }
+
+ul {
+  list-style: none; }
+
+button, input, select, textarea {
+  margin: 0; }
+
+html {
+  box-sizing: border-box; }
+
+*, *::before, *::after {
+  box-sizing: inherit; }
+
+img, video {
+  height: auto;
+  max-width: 100%; }
+
+iframe {
+  border: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td, th {
+  padding: 0; }
+
+td:not([align]), th:not([align]) {
+  text-align: left; }
+
+.start .st0 {
+  fill: #FFFFFF; }
+
+.start .st1 {
+  fill: #010000; }
+
+.start .st2 {
+  fill: #FEFEFE; }
+
+.start .st3 {
+  fill: #010101; }
+
+.start .st4 {
+  fill: #060606; }
+
+.start .st5 {
+  fill: #030303; }
+
+.start .st6 {
+  fill: #FF9900; }
+
+.start .st7 {
+  fill: #CDCDCD; }
+
+.start .st8 {
+  fill: #FE9900; }
+
+.start .st9 {
+  fill: #CCCCCC; }
+
+.start .st10 {
+  fill: #F7F7F7; }
+
+.start .st11 {
+  fill: #FEFEFD; }
+
+.start .st12 {
+  fill: #FD9800; }
+
+.start .st13 {
+  fill: #CACACA; }
+
+.start .st14 {
+  fill: #FDFDFD; }
+
+.start .st15 {
+  fill: #FCFCFC; }
+
+.start .st16 {
+  fill: #FC9700; }
+
+.start .st17 {
+  fill: #FEFDFC; }
+
+.start .st18 {
+  fill: #FCFBFA; }
+
+.start .st19 {
+  fill: #FCFCFA; }
+
+.start .st20 {
+  fill: #FD9903; }
+
+.start .st21 {
+  fill: #F5F5F5; }
+
+.start .st22 {
+  fill: #CBCBCB; }
+
+.start .st23 {
+  fill: #FBFAF8; }
+
+.start .st24 {
+  fill: #F6F6F6; }
+
+.start .st25 {
+  fill: #F3F3F3; }
+
+.start .st26 {
+  fill: #FBFBFB; }
+
+.start .st27 {
+  fill: #FAFAFA; }
+
+.start .st28 {
+  fill: #F4F4F4; }
+
+.start .st29 {
+  fill: #FFFBF6; }
+
+.start .st30 {
+  fill: #F0F0F0; }
+
+.start .st31 {
+  fill: #F2F2F2; }
+
+.start .st32 {
+  fill: #EEEEEE; }
+
+.start .st33 {
+  fill: #F8F8F8; }
+
+.start .st34 {
+  fill: #E7E7E7; }
+
+.start .st35 {
+  fill: #E8E8E8; }
+
+.start .st36 {
+  fill: #F1F1F1; }
+
+.start .st37 {
+  fill: #E88B00; }
+
+.start .st38 {
+  fill: #E6E6E6; }
+
+.start .st39 {
+  fill: #E3E3E3; }
+
+.start .st40 {
+  fill: #EDEDED; }
+
+.start .st41 {
+  fill: #E2E2E2; }
+
+.start .st42 {
+  fill: #E5E5E5; }
+
+.start .st43 {
+  fill: #DCDCDC; }
+
+.start .st44 {
+  fill: #DEDEDE; }
+
+.start .st45 {
+  fill: #D3D3D3; }
+
+.start .st46 {
+  fill: #E0E0E0; }
+
+.start .st47 {
+  fill: #C4C4C4; }
+
+.start .st48 {
+  fill: #B7B7B7; }
+
+.start .st49 {
+  fill: #8E8E8E; }
+
+.start .st50 {
+  fill: #8F8F8F; }
+
+.start .st51 {
+  fill: #7E7E7E; }
+
+.start .st52 {
+  fill: #8A8A8A; }
+
+.start .st53 {
+  fill: #070707; }
+
+.start .st54 {
+  fill: #040404; }
+
+.start .st55 {
+  fill: #0A0A0A; }
+
+.start .st56 {
+  fill: #0B0B0B; }
+
+.start .st57 {
+  fill: #090909; }
+
+.start .st58 {
+  fill: #0C0C0C; }
+
+.start .st59 {
+  fill: #020101; }
+
+.start .st60 {
+  fill: #020202; }
+
+.start .st61 {
+  fill: #080808; }
+
+.start .st62 {
+  fill: #111111; }
+
+.start .st63 {
+  fill: #0E0E0E; }
+
+.start .st64 {
+  fill: #050300; }
+
+.start .st65 {
+  fill: #0F0900; }
+
+.start .st66 {
+  fill: #120B00; }
+
+.start .st67 {
+  fill: #0E0800; }
+
+.start .st68 {
+  fill: #070501; }
+
+.start .st69 {
+  fill: #FFFBF5; }
+
+.start .st70 {
+  fill: #0B0905; }
+
+.start .st71 {
+  fill: #0C0700; }
+
+.start .st72 {
+  fill: #080603; }
+
+.start .st73 {
+  fill: #FFF9EF; }
+
+.start .st74 {
+  fill: #190F00; }
+
+.start .st75 {
+  fill: #F9F2E9; }
+
+.start .st76 {
+  fill: #0D0D0D; }
+
+.start .st77 {
+  fill: #0F0F0F; }
+
+.start .st78 {
+  fill: #171717; }
+
+.start .st79 {
+  fill: #2A2A2A; }
+
+.start .st80 {
+  fill: #3B3B3B; }
+
+.start .st81 {
+  fill: #1A1A1A; }
+
+.start .st82 {
+  fill: #151515; }
+
+.start .st83 {
+  fill: #323232; }
+
+.start .st84 {
+  fill: #444444; }
+
+.start .st85 {
+  fill: #040301; }
+
+.start .st86 {
+  fill: #030202; }
+
+.start .st87 {
+  fill: #181818; }
+
+.start .st88 {
+  fill: #101010; }
+
+.start .st89 {
+  fill: #5F5F5F; }
+
+.start .st90 {
+  fill: #F99600; }
+
+.start .st91 {
+  fill: #F79400; }
+
+.start .st92 {
+  fill: #FE9800; }
+
+.start .st93 {
+  fill: #131313; }
+
+.start .st94 {
+  fill: #050505; }
+
+.start .st95 {
+  fill: #EBEBEB; }
+
+.start .st96 {
+  fill: none; }
+
+.start .st97 {
+  fill: #FCFDFD; }
+
+.start .st98 {
+  fill: #FDFEFE; }
+
+.start .st99 {
+  fill: #FAFCFC; }
+
+.start .st100 {
+  fill: #F3F6F6; }
+
+.start .st101 {
+  fill: #B8BABA; }
+
+.start .st102 {
+  fill: #8CA7A7; }
+
+.start .st103 {
+  fill: #050404; }
+
+.start .st104 {
+  fill: #302828; }
+
+.start .st105 {
+  fill: #FEFDFD; }
+
+.start .st106 {
+  fill: #080500; }
+
+.hanger .st0 {
+  fill: #FEFEFE; }
+
+.hanger .st1 {
+  fill: #010101; }
+
+.hanger .st2 {
+  fill: #020202; }
+
+.hanger .st3 {
+  fill: #040404; }
+
+.hanger .st4 {
+  fill: #050505; }
+
+.hanger .st5 {
+  fill: #5E5E5E; }
+
+.hanger .st6 {
+  fill: #FFFFFF; }
+
+.hanger .st7 {
+  fill: #CDCDCD; }
+
+.hanger .st8 {
+  fill: #CFCFCF; }
+
+.hanger .st9 {
+  fill: #FF9900; }
+
+.hanger .st10 {
+  fill: #CCCCCC; }
+
+.hanger .st11 {
+  fill: #CECECE; }
+
+.hanger .st12 {
+  fill: #F7F7F7; }
+
+.hanger .st13 {
+  fill: #FCFCFC; }
+
+.hanger .st14 {
+  fill: #F9F9F9; }
+
+.hanger .st15 {
+  fill: #CBCBCB; }
+
+.hanger .st16 {
+  fill: #F39200; }
+
+.hanger .st17 {
+  fill: #F8F8F8; }
+
+.hanger .st18 {
+  fill: #FDFDFD; }
+
+.hanger .st19 {
+  fill: #F0F0F0; }
+
+.hanger .st20 {
+  fill: #FBFBFB; }
+
+.hanger .st21 {
+  fill: #FAFAFA; }
+
+.hanger .st22 {
+  fill: #F69300; }
+
+.hanger .st23 {
+  fill: #FEFEFD; }
+
+.hanger .st24 {
+  fill: #C7C7C7; }
+
+.hanger .st25 {
+  fill: #FE9800; }
+
+.hanger .st26 {
+  fill: #CACACA; }
+
+.hanger .st27 {
+  fill: #F2F2F2; }
+
+.hanger .st28 {
+  fill: #EEEEEE; }
+
+.hanger .st29 {
+  fill: #F89500; }
+
+.hanger .st30 {
+  fill: #FC9700; }
+
+.hanger .st31 {
+  fill: #F19100; }
+
+.hanger .st32 {
+  fill: #F79400; }
+
+.hanger .st33 {
+  fill: #F3F3F3; }
+
+.hanger .st34 {
+  fill: #F49300; }
+
+.hanger .st35 {
+  fill: #FA9600; }
+
+.hanger .st36 {
+  fill: #F1F1F1; }
+
+.hanger .st37 {
+  fill: #DFDFDF; }
+
+.hanger .st38 {
+  fill: #E1E1E1; }
+
+.hanger .st39 {
+  fill: #ECECEC; }
+
+.hanger .st40 {
+  fill: #E9E9E9; }
+
+.hanger .st41 {
+  fill: #EAEAEA; }
+
+.hanger .st42 {
+  fill: #EDEDED; }
+
+.hanger .st43 {
+  fill: #D8D8D8; }
+
+.hanger .st44 {
+  fill: #E0E0E0; }
+
+.hanger .st45 {
+  fill: #DDDDDD; }
+
+.hanger .st46 {
+  fill: #E4E4E4; }
+
+.hanger .st47 {
+  fill: #AEAEAE; }
+
+.hanger .st48 {
+  fill: #D0D0D0; }
+
+.hanger .st49 {
+  fill: #555555; }
+
+.hanger .st50 {
+  fill: #D3D3D3; }
+
+.hanger .st51 {
+  fill: #030303; }
+
+.hanger .st52 {
+  fill: #020101; }
+
+.hanger .st53 {
+  fill: #020201; }
+
+.hanger .st54 {
+  fill: #030202; }
+
+.hanger .st55 {
+  fill: #080808; }
+
+.hanger .st56 {
+  fill: #0C0C0C; }
+
+.hanger .st57 {
+  fill: #040302; }
+
+.hanger .st58 {
+  fill: #0B0B0B; }
+
+.hanger .st59 {
+  fill: #090909; }
+
+.hanger .st60 {
+  fill: #0D0D0D; }
+
+.hanger .st61 {
+  fill: #0A0A0A; }
+
+.hanger .st62 {
+  fill: #040402; }
+
+.hanger .st63 {
+  fill: #FFFEFC; }
+
+.hanger .st64 {
+  fill: #050300; }
+
+.hanger .st65 {
+  fill: #FFFDFA; }
+
+.hanger .st66 {
+  fill: #2E1B00; }
+
+.hanger .st67 {
+  fill: #050504; }
+
+.hanger .st68 {
+  fill: #D1D1D1; }
+
+.hanger .st69 {
+  fill: #D2D2D2; }
+
+.hanger .st70 {
+  fill: #FFFDFB; }
+
+.hanger .st71 {
+  fill: #FFFAF4; }
+
+.hanger .st72 {
+  fill: #F5F5F5; }
+
+.hanger .st73 {
+  fill: #C9C9C9; }
+
+.hanger .st74 {
+  fill: #F4F4F4; }
+
+.hanger .st75 {
+  fill: #969696; }
+
+.hanger .st76 {
+  fill: #FEFDFC; }
+
+.hanger .st77 {
+  fill: #C5C5C5; }
+
+.hanger .st78 {
+  fill: #E88C03; }
+
+.hanger .st79 {
+  fill: #5F5F5F; }
+
+.hanger .st80 {
+  fill: #E6E6E6; }
+
+.hanger .st81 {
+  fill: #EFEFEF; }
+
+.hanger .st82 {
+  fill: #E7E7E7; }
+
+.hanger .st83 {
+  fill: #FF9901; }
+
+.hanger .st84 {
+  fill: #C8C8C8; }
+
+.hanger .st85 {
+  fill: #C4C4C4; }
+
+.hanger .st86 {
+  fill: #F6F6F6; }
+
+.hanger .st87 {
+  fill: #BABABA; }
+
+.hanger .st88 {
+  fill: #F29100; }
+
+.hanger .st89 {
+  fill: #D7D7D7; }
+
+.hanger .st90 {
+  fill: #B7B7B7; }
+
+.hanger .st91 {
+  fill: #656565; }
+
+.hanger .st92 {
+  fill: #646464; }
+
+.hanger .st93 {
+  fill: #8C8C8C; }
+
+.hanger .st94 {
+  fill: #FC9801; }
+
+.hanger .st95 {
+  fill: #F79603; }
+
+.hanger .st96 {
+  fill: #F89602; }
+
+.hanger .st97 {
+  fill: #F99602; }
+
+.hanger .st98 {
+  fill: #C6C6C6; }
+
+.hanger .st99 {
+  fill: #FB9702; }
+
+.hanger .st100 {
+  fill: #C3C3C3; }
+
+.hanger .st101 {
+  fill: #FB9700; }
+
+.hanger .st102 {
+  fill: #040403; }
+
+.hanger .st103 {
+  fill: #080501; }
+
+.hanger .st104 {
+  fill: #0B0802; }
+
+.hanger .st105 {
+  fill: #FFFBF6; }
+
+.hanger .st106 {
+  fill: #D5D5D5; }
+
+.hanger .st107 {
+  fill: #050403; }
+
+.hanger .st108 {
+  fill: #0B0703; }
+
+.hanger .st109 {
+  fill: #090602; }
+
+.hanger .st110 {
+  fill: #D4D4D4; }
+
+.hanger .st111 {
+  fill: #101010; }
+
+.hanger .st112 {
+  fill: #060606; }
+
+.hanger .st113 {
+  fill: #070707; }
+
+.hanger .st114 {
+  fill: #0E0E0E; }
+
+.hanger .st115 {
+  fill: #D6D6D6; }
+
+.hanger .st116 {
+  fill: #DBDBDB; }
+
+.hanger .st117 {
+  fill: #EBEBEB; }
+
+.hanger .st118 {
+  fill: #A5A5A5; }
+
+.hanger .st119 {
+  fill: #7F7F7F; }
+
+.hanger .st120 {
+  fill: #F99500; }
+
+.hanger .st121 {
+  fill: #DADADA; }
+
+.hanger .st122 {
+  fill: #FE9900; }
+
+.hanger .st123 {
+  fill: #FDFEFE; }
+
+.hanger .st124 {
+  fill: #F3FCFC; }
+
+.hanger .st125 {
+  fill: #FAFBFB; }
+
+.hanger .st126 {
+  fill: #FCFDFD; }
+
+.hanger .st127 {
+  fill: #FE9901; }
+
+.hanger .st128 {
+  fill: #FCFEFE; }
+
+.hanger .st129 {
+  fill: #EDF5F5; }
+
+.hanger .st130 {
+  fill: #C4C9C9; }
+
+.hanger .st131 {
+  fill: #C3C9C9; }
+
+.hanger .st132 {
+  fill: #E6F0F0; }
+
+.hanger .st133 {
+  fill: #F5F6F6; }
+
+.hanger .st134 {
+  fill: #F9F8F6; }
+
+.hanger .st135 {
+  fill: #F7F8F8; }
+
+.hanger .st136 {
+  fill: #F5F7F7; }
+
+.hanger .st137 {
+  fill: #F7FBFB; }
+
+.hanger .st138 {
+  fill: #F0F3F3; }
+
+.hanger .st139 {
+  fill: #F6F6EF; }
+
+.hanger .st140 {
+  fill: #F0F1F1; }
+
+.hanger .st141 {
+  fill: #F2F4F4; }
+
+.hanger .st142 {
+  fill: #F3F5F5; }
+
+.hanger .st143 {
+  fill: #F0F4F4; }
+
+.hanger .st144 {
+  fill: #FAF9F9; }
+
+.hanger .st145 {
+  fill: #FAF8F8; }
+
+.hanger .st146 {
+  fill: #A5A4A4; }
+
+.hanger .st147 {
+  fill: #B3B9B9; }
+
+.hanger .st148 {
+  fill: #EAE9E9; }
+
+.hanger .st149 {
+  fill: #AFB5B5; }
+
+.hanger .st150 {
+  fill: #A0A1A1; }
+
+.hanger .st151 {
+  fill: #060401; }
+
+.hanger .st152 {
+  fill: #FDF9F5; }
+
+.hanger .st153 {
+  fill: #120A00; }
+
+.hanger .st154 {
+  fill: #281700; }
+
+.hanger .st155 {
+  fill: #2F2D2D; }
+
+.hanger .st156 {
+  fill: #251E1E; }
+
+.hanger .st157 {
+  fill: #1E1A1A; }
+
+.hanger .st158 {
+  fill: #2A2828; }
+
+.hanger .st159 {
+  fill: #231C1C; }
+
+.hanger .st160 {
+  fill: #181313; }
+
+.hanger .st161 {
+  fill: #1C1919; }
+
+.interact .st0 {
+  fill: #FEFEFE; }
+
+.interact .st1 {
+  fill: #010101; }
+
+.interact .st2 {
+  fill: #020202; }
+
+.interact .st3 {
+  fill: #040404; }
+
+.interact .st4 {
+  fill: #050505; }
+
+.interact .st5 {
+  fill: #5E5E5E; }
+
+.interact .st6 {
+  fill: #FFFFFF; }
+
+.interact .st7 {
+  fill: #CDCDCD; }
+
+.interact .st8 {
+  fill: #CFCFCF; }
+
+.interact .st9 {
+  fill: #FF9900; }
+
+.interact .st10 {
+  fill: #CCCCCC; }
+
+.interact .st11 {
+  fill: #CECECE; }
+
+.interact .st12 {
+  fill: #F7F7F7; }
+
+.interact .st13 {
+  fill: #FCFCFC; }
+
+.interact .st14 {
+  fill: #F9F9F9; }
+
+.interact .st15 {
+  fill: #CBCBCB; }
+
+.interact .st16 {
+  fill: #F39200; }
+
+.interact .st17 {
+  fill: #F8F8F8; }
+
+.interact .st18 {
+  fill: #FDFDFD; }
+
+.interact .st19 {
+  fill: #F0F0F0; }
+
+.interact .st20 {
+  fill: #FBFBFB; }
+
+.interact .st21 {
+  fill: #FAFAFA; }
+
+.interact .st22 {
+  fill: #F69300; }
+
+.interact .st23 {
+  fill: #FEFEFD; }
+
+.interact .st24 {
+  fill: #C7C7C7; }
+
+.interact .st25 {
+  fill: #FE9800; }
+
+.interact .st26 {
+  fill: #CACACA; }
+
+.interact .st27 {
+  fill: #F2F2F2; }
+
+.interact .st28 {
+  fill: #EEEEEE; }
+
+.interact .st29 {
+  fill: #F89500; }
+
+.interact .st30 {
+  fill: #FC9700; }
+
+.interact .st31 {
+  fill: #F19100; }
+
+.interact .st32 {
+  fill: #F79400; }
+
+.interact .st33 {
+  fill: #F3F3F3; }
+
+.interact .st34 {
+  fill: #F49300; }
+
+.interact .st35 {
+  fill: #FA9600; }
+
+.interact .st36 {
+  fill: #F1F1F1; }
+
+.interact .st37 {
+  fill: #DFDFDF; }
+
+.interact .st38 {
+  fill: #E1E1E1; }
+
+.interact .st39 {
+  fill: #ECECEC; }
+
+.interact .st40 {
+  fill: #E9E9E9; }
+
+.interact .st41 {
+  fill: #EAEAEA; }
+
+.interact .st42 {
+  fill: #EDEDED; }
+
+.interact .st43 {
+  fill: #D8D8D8; }
+
+.interact .st44 {
+  fill: #E0E0E0; }
+
+.interact .st45 {
+  fill: #DDDDDD; }
+
+.interact .st46 {
+  fill: #E4E4E4; }
+
+.interact .st47 {
+  fill: #AEAEAE; }
+
+.interact .st48 {
+  fill: #D0D0D0; }
+
+.interact .st49 {
+  fill: #555555; }
+
+.interact .st50 {
+  fill: #D3D3D3; }
+
+.interact .st51 {
+  fill: #030303; }
+
+.interact .st52 {
+  fill: #020101; }
+
+.interact .st53 {
+  fill: #020201; }
+
+.interact .st54 {
+  fill: #030202; }
+
+.interact .st55 {
+  fill: #080808; }
+
+.interact .st56 {
+  fill: #0C0C0C; }
+
+.interact .st57 {
+  fill: #040302; }
+
+.interact .st58 {
+  fill: #0B0B0B; }
+
+.interact .st59 {
+  fill: #090909; }
+
+.interact .st60 {
+  fill: #0D0D0D; }
+
+.interact .st61 {
+  fill: #0A0A0A; }
+
+.interact .st62 {
+  fill: #040402; }
+
+.interact .st63 {
+  fill: #FFFEFC; }
+
+.interact .st64 {
+  fill: #050300; }
+
+.interact .st65 {
+  fill: #FFFDFA; }
+
+.interact .st66 {
+  fill: #2E1B00; }
+
+.interact .st67 {
+  fill: #050504; }
+
+.interact .st68 {
+  fill: #D1D1D1; }
+
+.interact .st69 {
+  fill: #D2D2D2; }
+
+.interact .st70 {
+  fill: #FFFDFB; }
+
+.interact .st71 {
+  fill: #FFFAF4; }
+
+.interact .st72 {
+  fill: #F5F5F5; }
+
+.interact .st73 {
+  fill: #C9C9C9; }
+
+.interact .st74 {
+  fill: #F4F4F4; }
+
+.interact .st75 {
+  fill: #969696; }
+
+.interact .st76 {
+  fill: #FEFDFC; }
+
+.interact .st77 {
+  fill: #C5C5C5; }
+
+.interact .st78 {
+  fill: #E88C03; }
+
+.interact .st79 {
+  fill: #5F5F5F; }
+
+.interact .st80 {
+  fill: #E6E6E6; }
+
+.interact .st81 {
+  fill: #EFEFEF; }
+
+.interact .st82 {
+  fill: #E7E7E7; }
+
+.interact .st83 {
+  fill: #FF9901; }
+
+.interact .st84 {
+  fill: #C8C8C8; }
+
+.interact .st85 {
+  fill: #C4C4C4; }
+
+.interact .st86 {
+  fill: #F6F6F6; }
+
+.interact .st87 {
+  fill: #BABABA; }
+
+.interact .st88 {
+  fill: #F29100; }
+
+.interact .st89 {
+  fill: #D7D7D7; }
+
+.interact .st90 {
+  fill: #B7B7B7; }
+
+.interact .st91 {
+  fill: #656565; }
+
+.interact .st92 {
+  fill: #646464; }
+
+.interact .st93 {
+  fill: #8C8C8C; }
+
+.interact .st94 {
+  fill: #FC9801; }
+
+.interact .st95 {
+  fill: #F79603; }
+
+.interact .st96 {
+  fill: #F89602; }
+
+.interact .st97 {
+  fill: #F99602; }
+
+.interact .st98 {
+  fill: #C6C6C6; }
+
+.interact .st99 {
+  fill: #FB9702; }
+
+.interact .st100 {
+  fill: #C3C3C3; }
+
+.interact .st101 {
+  fill: #FB9700; }
+
+.interact .st102 {
+  fill: #040403; }
+
+.interact .st103 {
+  fill: #080501; }
+
+.interact .st104 {
+  fill: #0B0802; }
+
+.interact .st105 {
+  fill: #FFFBF6; }
+
+.interact .st106 {
+  fill: #D5D5D5; }
+
+.interact .st107 {
+  fill: #050403; }
+
+.interact .st108 {
+  fill: #0B0703; }
+
+.interact .st109 {
+  fill: #090602; }
+
+.interact .st110 {
+  fill: #D4D4D4; }
+
+.interact .st111 {
+  fill: #101010; }
+
+.interact .st112 {
+  fill: #060606; }
+
+.interact .st113 {
+  fill: #070707; }
+
+.interact .st114 {
+  fill: #0E0E0E; }
+
+.interact .st115 {
+  fill: #D6D6D6; }
+
+.interact .st116 {
+  fill: #DBDBDB; }
+
+.interact .st117 {
+  fill: #EBEBEB; }
+
+.interact .st118 {
+  fill: #A5A5A5; }
+
+.interact .st119 {
+  fill: #7F7F7F; }
+
+.interact .st120 {
+  fill: #F99500; }
+
+.interact .st121 {
+  fill: #DADADA; }
+
+.interact .st122 {
+  fill: #FE9900; }
+
+.interact .st123 {
+  fill: #FDFEFE; }
+
+.interact .st124 {
+  fill: #F3FCFC; }
+
+.interact .st125 {
+  fill: #FAFBFB; }
+
+.interact .st126 {
+  fill: #FCFDFD; }
+
+.interact .st127 {
+  fill: #FE9901; }
+
+.interact .st128 {
+  fill: #FCFEFE; }
+
+.interact .st129 {
+  fill: #EDF5F5; }
+
+.interact .st130 {
+  fill: #C4C9C9; }
+
+.interact .st131 {
+  fill: #C3C9C9; }
+
+.interact .st132 {
+  fill: #E6F0F0; }
+
+.interact .st133 {
+  fill: #F5F6F6; }
+
+.interact .st134 {
+  fill: #F9F8F6; }
+
+.interact .st135 {
+  fill: #F7F8F8; }
+
+.interact .st136 {
+  fill: #F5F7F7; }
+
+.interact .st137 {
+  fill: #F7FBFB; }
+
+.interact .st138 {
+  fill: #F0F3F3; }
+
+.interact .st139 {
+  fill: #F6F6EF; }
+
+.interact .st140 {
+  fill: #F0F1F1; }
+
+.interact .st141 {
+  fill: #F2F4F4; }
+
+.interact .st142 {
+  fill: #F3F5F5; }
+
+.interact .st143 {
+  fill: #F0F4F4; }
+
+.interact .st144 {
+  fill: #FAF9F9; }
+
+.interact .st145 {
+  fill: #FAF8F8; }
+
+.interact .st146 {
+  fill: #A5A4A4; }
+
+.interact .st147 {
+  fill: #B3B9B9; }
+
+.interact .st148 {
+  fill: #EAE9E9; }
+
+.interact .st149 {
+  fill: #AFB5B5; }
+
+.interact .st150 {
+  fill: #A0A1A1; }
+
+.interact .st151 {
+  fill: #060401; }
+
+.interact .st152 {
+  fill: #FDF9F5; }
+
+.interact .st153 {
+  fill: #120A00; }
+
+.interact .st154 {
+  fill: #281700; }
+
+.interact .st155 {
+  fill: #2F2D2D; }
+
+.interact .st156 {
+  fill: #251E1E; }
+
+.interact .st157 {
+  fill: #1E1A1A; }
+
+.interact .st158 {
+  fill: #2A2828; }
+
+.interact .st159 {
+  fill: #231C1C; }
+
+.interact .st160 {
+  fill: #181313; }
+
+.interact .st161 {
+  fill: #1C1919; }
+
+.interact .st162 {
+  fill: #F4F7F7; }
+
+.interact .st163 {
+  fill: #312A2A; }
+
+.interact .st164 {
+  fill: #F4F5F5; }
+
+.interact .st165 {
+  fill: #E7ECEC; }
+
+.interact .st166 {
+  fill: #EBECEC; }
+
+.interact .st167 {
+  fill: #F8F9F9; }
+
+.interact .st168 {
+  fill: #DEE1E1; }
+
+.interact .st169 {
+  fill: #EBF0F0; }
+
+.interact .st170 {
+  fill: #E3E9E9; }
+
+.interact .st171 {
+  fill: #DCE4E4; }
+
+.interact .st172 {
+  fill: #373030; }
+
+.interact .st173 {
+  fill: #474747; }
+
+.interact .st174 {
+  fill: #D2D4D4; }
+
+.interact .st175 {
+  fill: #312B2B; }
+
+.interact .st176 {
+  fill: #3D3131; }
+
+.interact .st177 {
+  fill: #B2B8B8; }
+
+.interact .st178 {
+  fill: #F9FEFE; }
+
+.interact .st179 {
+  fill: #B5BBBB; }
+
+.interact .st180 {
+  fill: #AFB2B2; }
+
+.interact .st181 {
+  fill: #4F5959; }
+
+.interact .st182 {
+  fill: #7C8787; }
+
+.interact .st183 {
+  fill: #889191; }
+
+.interact .st184 {
+  fill: #110F0F; }
+
+.interact .st185 {
+  fill: #100D0D; }
+
+.interact .st186 {
+  fill: #101111; }
+
+.interact .st187 {
+  fill: #1C1818; }
+
+.interact .st188 {
+  fill: #1C1713; }
+
+.interact .st189 {
+  fill: #231A10; }
+
+.interact .st190 {
+  fill: #150D00; }
+
+.interact .st191 {
+  fill: #EDF4F4; }
+
+.interact .st192 {
+  fill: #E3EBEB; }
+
+.interact .st193 {
+  fill: #D98300; }
+
+.interact .st194 {
+  fill: #F19200; }
+
+.interact .st195 {
+  fill: #FD9801; }
+
+.interact .st196 {
+  fill: #FBFCFC; }
+
+.interact .st197 {
+  fill: #F9FCFA; }
+
+.interact .st198 {
+  fill: #F8FAFA; }
+
+.interact .st199 {
+  fill: #CBC9C9; }
+
+.interact .st200 {
+  fill: #B5B7B7; }
+
+.interact .st201 {
+  fill: #F3F4F4; }
+
+.interact .st202 {
+  fill: #FA9705; }
+
+.interact .st203 {
+  fill: #F6FAFA; }
+
+.interact .st204 {
+  fill: #F7F6F2; }
+
+.interact .st205 {
+  fill: #E48E0B; }
+
+.interact .st206 {
+  fill: #E58E0A; }
+
+.interact .st207 {
+  fill: #F9FCFC; }
+
+.interact .st208 {
+  fill: #E89013; }
+
+.interact .st209 {
+  fill: #EDEFEF; }
+
+.interact .st210 {
+  fill: #F2EDE4; }
+
+.interact .st211 {
+  fill: #F5F9F9; }
+
+.interact .st212 {
+  fill: #F0F1EE; }
+
+.interact .st213 {
+  fill: #F99702; }
+
+.interact .st214 {
+  fill: #F39708; }
+
+.interact .st215 {
+  fill: #D5870F; }
+
+.interact .st216 {
+  fill: #F2EFE9; }
+
+.interact .st217 {
+  fill: #F2ECE0; }
+
+.interact .st218 {
+  fill: #F2ECE1; }
+
+.interact .st219 {
+  fill: #A9A7A7; }
+
+.interact .st220 {
+  fill: #0A0909; }
+
+.interact .st221 {
+  fill: #1B1B1B; }
+
+.interact .st222 {
+  fill: #0B0A08; }
+
+.interact .st223 {
+  fill: #090603; }
+
+.interact .st224 {
+  fill: #F0F7F2; }
+
+.interact .st225 {
+  fill: #F9FBFB; }
+
+.interact .st226 {
+  fill: #FAFCFC; }
+
+.interact .st227 {
+  fill: #E4E6E6; }
+
+.interact .st228 {
+  fill: #FFFEFE; }
+
+.interact .st229 {
+  fill: #140B0B; }
+
+.interact .st230 {
+  fill: #1B1919; }
+
+.interact .st231 {
+  fill: #FE9801; }
+
+.interact .st232 {
+  fill: #CBCCCC; }
+
+.interact .st233 {
+  fill: #FCFDFC; }
+
+.interact .st234 {
+  fill: #F7F9F9; }
+
+.interact .st235 {
+  fill: #B7BABA; }
+
+.interact .st236 {
+  fill: #F2F3F3; }
+
+.interact .st237 {
+  fill: #FB9806; }
+
+.interact .st238 {
+  fill: #F6F9F9; }
+
+.interact .st239 {
+  fill: #F8F8F6; }
+
+.interact .st240 {
+  fill: #DD8C0D; }
+
+.interact .st241 {
+  fill: #EC910A; }
+
+.interact .st242 {
+  fill: #EC951B; }
+
+.interact .st243 {
+  fill: #EBEDED; }
+
+.interact .st244 {
+  fill: #FFFBF5; }
+
+.interact .st245 {
+  fill: #E2E6E5; }
+
+.interact .st246 {
+  fill: #F49606; }
+
+.interact .st247 {
+  fill: #F79909; }
+
+.interact .st248 {
+  fill: #DF8C0E; }
+
+.interact .st249 {
+  fill: #E5E2E0; }
+
+.interact .st250 {
+  fill: #ECE9E1; }
+
+.interact .st251 {
+  fill: #EDEBE6; }
+
+.interact .st252 {
+  fill: #1D1717; }
+
+.interact .st253 {
+  fill: #F9F9F5; }
+
+.interact .st254 {
+  fill: #0C0700; }
+
+.interact .st255 {
+  fill: #180F00; }
+
+.interact .st256 {
+  fill: #180E0E; }
+
+.interact .st257 {
+  fill: #161313; }
+
+.interact .st258 {
+  fill: #FD9800; }
+
+.interact .st259 {
+  fill: #FB9701; }
+
+.interact .st260 {
+  fill: #F4F4F3; }
+
+.interact .st261 {
+  fill: #EFF0F0; }
+
+.interact .st262 {
+  fill: #F5F8F8; }
+
+.interact .st263 {
+  fill: #F6F8F8; }
+
+.interact .st264 {
+  fill: #F4F9F9; }
+
+.interact .st265 {
+  fill: #EAEBEB; }
+
+.interact .st266 {
+  fill: #DD8500; }
+
+.interact .st267 {
+  fill: #F9FDFD; }
+
+.interact .st268 {
+  fill: #EFF3F3; }
+
+.interact .st269 {
+  fill: #DFE7E7; }
+
+.interact .st270 {
+  fill: #F2F0EB; }
+
+.interact .st271 {
+  fill: #E5E7E7; }
+
+.interact .st272 {
+  fill: #F59000; }
+
+.interact .st273 {
+  fill: #E2E6E6; }
+
+.interact .st274 {
+  fill: #DFE2E2; }
+
+.interact .st275 {
+  fill: #F1F0E5; }
+
+.interact .st276 {
+  fill: #F5F0E4; }
+
+.interact .st277 {
+  fill: #D3D9CB; }
+
+.interact .st278 {
+  fill: #B8B7B7; }
+
+.interact .st279 {
+  fill: #090805; }
+
+.interact .st280 {
+  fill: #231400; }
+
+.interact .st281 {
+  fill: #262424; }
+
+.interact .st282 {
+  fill: #0B0909; }
+
+.interact .st283 {
+  fill: #201D1D; }
+
+.interact .st284 {
+  fill: #151111; }
+
+.interact .st285 {
+  fill: #869B9B; }
+
+.interact .st286 {
+  fill: #CCCDCD; }
+
+.interact .st287 {
+  fill: #F9FAFA; }
+
+.interact .st288 {
+  fill: #F7FAFA; }
+
+.interact .st289 {
+  fill: #FC9902; }
+
+.interact .st290 {
+  fill: #F1F4F4; }
+
+.interact .st291 {
+  fill: #FCFBF9; }
+
+.interact .st292 {
+  fill: #E6E7E7; }
+
+.interact .st293 {
+  fill: #E3E5E5; }
+
+.interact .st294 {
+  fill: #F6F5F3; }
+
+.interact .st295 {
+  fill: #F59300; }
+
+.interact .st296 {
+  fill: #FCF7F4; }
+
+.interact .st297 {
+  fill: #F89702; }
+
+.interact .st298 {
+  fill: #E8E9E9; }
+
+.interact .st299 {
+  fill: #E48900; }
+
+.interact .st300 {
+  fill: #E5ECEC; }
+
+.interact .st301 {
+  fill: #F3F0F0; }
+
+.interact .st302 {
+  fill: #EAEFEF; }
+
+.interact .st303 {
+  fill: #F5FAFA; }
+
+.interact .st304 {
+  fill: #F5EFED; }
+
+.interact .st305 {
+  fill: #EAEEEE; }
+
+.interact .st306 {
+  fill: #E5EBE6; }
+
+.interact .st307 {
+  fill: #ED8A03; }
+
+.interact .st308 {
+  fill: #E4E8E8; }
+
+.interact .st309 {
+  fill: #120E00; }
+
+.interact .st310 {
+  fill: #231F1F; }
+
+.interact .st311 {
+  fill: #090808; }
+
+.interact .st312 {
+  fill: #1F1313; }
+
+.interact .st313 {
+  fill: #262121; }
+
+.interact .st314 {
+  fill: #010000; }
+
+.interact .st315 {
+  fill: #F0F6F2; }
+
+.interact .st316 {
+  fill: #F1F6F1; }
+
+.interact .st317 {
+  fill: #1A1313; }
+
+.interact .st318 {
+  fill: #8C9B9B; }
+
+.interact .st319 {
+  fill: #482F03; }
+
+.interact .st320 {
+  fill: #A56700; }
+
+.interact .st321 {
+  fill: #96620B; }
+
+.interact .st322 {
+  fill: #1B1A1A; }
+
+.interact .st323 {
+  fill: #231E1E; }
+
+.feedback .st0 {
+  fill: #FFFFFF; }
+
+.feedback .st1 {
+  fill: #010000; }
+
+.feedback .st2 {
+  fill: #FEFEFE; }
+
+.feedback .st3 {
+  fill: #010101; }
+
+.feedback .st4 {
+  fill: #030303; }
+
+.feedback .st5 {
+  fill: #060606; }
+
+.feedback .st6 {
+  fill: #020202; }
+
+.feedback .st7 {
+  fill: #CDCDCD; }
+
+.feedback .st8 {
+  fill: #FF9900; }
+
+.feedback .st9 {
+  fill: #CECECE; }
+
+.feedback .st10 {
+  fill: #FDFDFD; }
+
+.feedback .st11 {
+  fill: #FE9800; }
+
+.feedback .st12 {
+  fill: #CCCCCC; }
+
+.feedback .st13 {
+  fill: #CBCBCB; }
+
+.feedback .st14 {
+  fill: #FEFDFC; }
+
+.feedback .st15 {
+  fill: #FE9801; }
+
+.feedback .st16 {
+  fill: #FCFCFC; }
+
+.feedback .st17 {
+  fill: #FC9803; }
+
+.feedback .st18 {
+  fill: #FDFCFB; }
+
+.feedback .st19 {
+  fill: #FD9800; }
+
+.feedback .st20 {
+  fill: #F6F6F6; }
+
+.feedback .st21 {
+  fill: #F9F9F9; }
+
+.feedback .st22 {
+  fill: #F7F7F7; }
+
+.feedback .st23 {
+  fill: #F8F8F8; }
+
+.feedback .st24 {
+  fill: #F0F0F0; }
+
+.feedback .st25 {
+  fill: #C8C8C8; }
+
+.feedback .st26 {
+  fill: #FBFBF9; }
+
+.feedback .st27 {
+  fill: #F6F5F3; }
+
+.feedback .st28 {
+  fill: #FBFBFB; }
+
+.feedback .st29 {
+  fill: #F5F5F5; }
+
+.feedback .st30 {
+  fill: #C3C3C3; }
+
+.feedback .st31 {
+  fill: #EFEFEF; }
+
+.feedback .st32 {
+  fill: #F4F4F4; }
+
+.feedback .st33 {
+  fill: #F7F4F0; }
+
+.feedback .st34 {
+  fill: #EBEBEB; }
+
+.feedback .st35 {
+  fill: #C9C9C9; }
+
+.feedback .st36 {
+  fill: #F9F6F1; }
+
+.feedback .st37 {
+  fill: #F6F3EE; }
+
+.feedback .st38 {
+  fill: #FAF8F5; }
+
+.feedback .st39 {
+  fill: #F1F1F1; }
+
+.feedback .st40 {
+  fill: #F7F4EF; }
+
+.feedback .st41 {
+  fill: #F3F1EE; }
+
+.feedback .st42 {
+  fill: #E5E5E5; }
+
+.feedback .st43 {
+  fill: #F19100; }
+
+.feedback .st44 {
+  fill: #E6E6E6; }
+
+.feedback .st45 {
+  fill: #E1E1E1; }
+
+.feedback .st46 {
+  fill: #EEEEEE; }
+
+.feedback .st47 {
+  fill: #E0E0E0; }
+
+.feedback .st48 {
+  fill: #16130E; }
+
+.feedback .st49 {
+  fill: #F2EDE6; }
+
+.feedback .st50 {
+  fill: #F8F5F1; }
+
+.feedback .st51 {
+  fill: #D9D9D9; }
+
+.feedback .st52 {
+  fill: #E7E7E7; }
+
+.feedback .st53 {
+  fill: #ECECEC; }
+
+.feedback .st54 {
+  fill: #EDE9E3; }
+
+.feedback .st55 {
+  fill: #F3EDE3; }
+
+.feedback .st56 {
+  fill: #DEDEDE; }
+
+.feedback .st57 {
+  fill: #9E9E9E; }
+
+.feedback .st58 {
+  fill: #D9BF98; }
+
+.feedback .st59 {
+  fill: #747474; }
+
+.feedback .st60 {
+  fill: #B5B5B5; }
+
+.feedback .st61 {
+  fill: #DFCDB2; }
+
+.feedback .st62 {
+  fill: #5F5F5F; }
+
+.feedback .st63 {
+  fill: #191919; }
+
+.feedback .st64 {
+  fill: #040404; }
+
+.feedback .st65 {
+  fill: #121212; }
+
+.feedback .st66 {
+  fill: #D1D1D1; }
+
+.feedback .st67 {
+  fill: #070707; }
+
+.feedback .st68 {
+  fill: #0C0C0C; }
+
+.feedback .st69 {
+  fill: #0A0A0A; }
+
+.feedback .st70 {
+  fill: #0D0D0D; }
+
+.feedback .st71 {
+  fill: #0F0F0F; }
+
+.feedback .st72 {
+  fill: #080808; }
+
+.feedback .st73 {
+  fill: #050505; }
+
+.feedback .st74 {
+  fill: #110C06; }
+
+.feedback .st75 {
+  fill: #F5EDE2; }
+
+.feedback .st76 {
+  fill: #131313; }
+
+.feedback .st77 {
+  fill: #373737; }
+
+.feedback .st78 {
+  fill: #1B1B1B; }
+
+.feedback .st79 {
+  fill: #141414; }
+
+.feedback .st80 {
+  fill: #1A1A1A; }
+
+.feedback .st81 {
+  fill: #090500; }
+
+.feedback .st82 {
+  fill: #FC9700; }
+
+.feedback .st83 {
+  fill: #FB9600; }
+
+.feedback .st84 {
+  fill: #F69400; }
+
+.feedback .st85 {
+  fill: #DCDCDC; }
+
+.feedback .st86 {
+  fill: #FAFAFA; }
+
+.feedback .st87 {
+  fill: #F3F3F3; }
+
+.feedback .st88 {
+  fill: none; }
+
+.feedback .st89 {
+  fill: #020201; }
+
+.feedback .st90 {
+  fill: #090909; }
+
+.feedback .st91 {
+  fill: #FEFEFD; }
+
+.feedback .st92 {
+  fill: #070400; }
+
+.feedback .st93 {
+  fill: #080500; }
+
+svg {
+  width: 100%;
+  height: auto; }
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  max-width: 1350px;
+  margin: auto; }
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+  .slide div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; }
+
+.slide-1 {
+  z-index: 10; }
+  .slide-1 .start {
+    z-index: 5;
+    background: rgba(0, 0, 0, 0.5); }
+  .slide-1 #start_x5F_button_xA0_Image {
+    cursor: pointer; }
+
+.d-none {
+  display: none; }
