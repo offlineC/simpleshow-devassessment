@@ -4,14 +4,30 @@ $(function(){
 		$(".hanger").addClass("d-none");
 	});
 
-	$(".left-arm").on('click', function(){
-		console.log("clicked")
+
+	$(".draggable").on('click', function(){
+    var left = $(this).offset();
+    var width = $(window).width();
+		console.log((left.left/width)*100 + " left %");
+    var top = $(this).offset();
+    var height = $(window).height();
+    // console.log((top.top/height)*100 + " top %");
+    console.log(top.top + " top px");
 	});
+
+  var partw = $(".arm-l").outerWidth();
+  var parth = $(".arm-l").outerHeight();
+  $("#arm-l").css({
+    width: partw + 'px',
+    height: parth + 'px',
+    background: 'rgba(255,255,0,0.3)'
+  });
+
 });
 
 
 	// target elements with the "draggable" class
-	interact('.part')
+	interact('.int')
 	.draggable({
     // enable inertial throwing
     inertia: false,
@@ -46,6 +62,8 @@ $(function(){
   target.style.webkitTransform =
   target.style.transform =
   'translate(' + x + 'px, ' + y + 'px)'
+      // target.style.left = x + 'px';
+      // target.style.top = y + 'px';
 
   // update the posiion attributes
   target.setAttribute('data-x', x)
@@ -53,11 +71,11 @@ $(function(){
 }
 
 // enable draggables to be dropped into this
-interact('.droparea').dropzone({
+interact('#arm-l').dropzone({
   // only accept elements matching this CSS selector
-  // accept: '#yes-drop',
+  accept: '.arm-l',
   // Require a 75% element overlap for a drop to be possible
-  overlap: 0.75,
+  overlap: 0.9,
 
   // listen for drop related events:
   ondropactivate: function (event) {
@@ -72,17 +90,18 @@ ondragenter: function (event) {
     // feedback the possibility of a drop
     dropzoneElement.classList.add('drop-target')
     draggableElement.classList.add('can-drop')
-    draggableElement.textContent = 'Dragged in'
+    // draggableElement.textContent = 'Dragged in'
     console.log("dragged in");
 },
 ondragleave: function (event) {
     // remove the drop feedback style
     event.target.classList.remove('drop-target')
     event.relatedTarget.classList.remove('can-drop')
-    event.relatedTarget.textContent = 'Dragged out'
+    // event.relatedTarget.textContent = 'Dragged out'
 },
 ondrop: function (event) {
-	event.relatedTarget.textContent = 'Dropped'
+  var draggableElement = event.relatedTarget;
+  draggableElement.classList.remove('int');
 },
 ondropdeactivate: function (event) {
     // remove active dropzone feedback

@@ -2106,15 +2106,16 @@ svg {
   height: 100vh;
   position: relative;
   max-width: 1350px;
+  max-height: 760px;
   margin: auto; }
 
 .slide {
   position: absolute;
-  top: 0;
   left: 0;
+  top: 0;
   width: 100%;
   height: 100%; }
-  .slide div {
+  .slide > div {
     position: absolute;
     left: 0;
     top: 0;
@@ -2128,6 +2129,68 @@ svg {
     background: rgba(0, 0, 0, 0.5); }
   .slide-1 #start_x5F_button_xA0_Image {
     cursor: pointer; }
+
+.slide-2 .instruction {
+  z-index: 5; }
+
+.slide-2 .movable {
+  z-index: 10; }
+
+.slide-2 .parts {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; }
+
+.slide-2 .draggable {
+  position: absolute;
+  touch-action: none;
+  background: rgba(0, 0, 0, 0.2);
+  opacity: 0.5; }
+
+.slide-2 .dropoff {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; }
+
+.slide-2 .drop {
+  position: absolute; }
+
+.movable .arm-l {
+  width: 6.75%;
+  left: 78%;
+  top: 17.75%; }
+
+.movable .arm-r {
+  width: 6.7%;
+  left: 85%;
+  top: 17.75%; }
+
+.movable .chest {
+  width: 15%;
+  left: 63.36%;
+  top: 225.35px; }
+
+.movable .head {
+  width: 6.5%;
+  left: 64.80%;
+  top: 52.51%; }
+
+.movable .leg-l {
+  width: 6.25%;
+  left: 10%;
+  top: 10%; }
+
+.movable .leg-r {
+  width: 6.25%;
+  left: 30%;
+  top: 30%; }
+
+.no-touch {
+  pointer-action: none; }
 
 .d-none {
   display: none; }
