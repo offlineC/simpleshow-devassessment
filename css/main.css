@@ -2154,10 +2154,9 @@ svg {
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%; }
-
-.slide-2 .drop {
-  position: absolute; }
+  height: 100%;
+  display: flex;
+  justify-content: space-around; }
 
 .movable .arm-l {
   width: 6.75%;

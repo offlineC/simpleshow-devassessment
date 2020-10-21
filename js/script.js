@@ -8,22 +8,28 @@ $(function(){
 	$(".draggable").on('click', function(){
     var left = $(this).offset();
     var width = $(window).width();
-		console.log((left.left/width)*100 + " left %");
+    console.log((left.left/width)*100 + " left %");
     var top = $(this).offset();
     var height = $(window).height();
     // console.log((top.top/height)*100 + " top %");
     console.log(top.top + " top px");
-	});
-
-  var partw = $(".arm-l").outerWidth();
-  var parth = $(".arm-l").outerHeight();
-  $("#arm-l").css({
-    width: partw + 'px',
-    height: parth + 'px',
-    background: 'rgba(255,255,0,0.3)'
   });
 
+  var allParts = $(".draggable").length;
+  for (i = 0; i< allParts; i++){
+    var partsPush = $(".draggable").eq(i).attr("part-name");
+    var partw = $("."+partsPush).outerWidth();
+    var parth = $("."+partsPush).outerHeight();
+    $("#"+partsPush).css({
+      width: partw + 'px',
+      height: parth + 'px',
+      background: 'rgba(255,255,0,0.3)'
+    });
+  }
+
 });
+
+var completed = 0;
 
 
 	// target elements with the "draggable" class
@@ -49,8 +55,8 @@ $(function(){
       end (event) {
       	
       }
-  }
-})
+    }
+  })
 
 	function dragMoveListener (event) {
 		var target = event.target
@@ -70,10 +76,17 @@ $(function(){
   target.setAttribute('data-y', y)
 }
 
-// enable draggables to be dropped into this
-interact('#arm-l').dropzone({
+var allParts = $(".draggable").length;
+for (i = 0; i< allParts; i++){
+  var partsPush = $(".draggable").eq(i).attr("part-name");
+  dropE(partsPush);
+}
+
+function dropE(el){
+  // enable draggables to be dropped into this
+  interact('#'+el).dropzone({
   // only accept elements matching this CSS selector
-  accept: '.arm-l',
+  accept: '.'+el,
   // Require a 75% element overlap for a drop to be possible
   overlap: 0.9,
 
@@ -82,31 +95,30 @@ interact('#arm-l').dropzone({
     // add active dropzone feedback
     event.target.classList.add('drop-active')
     console.log("waiting for drop");
-},
-ondragenter: function (event) {
-	var draggableElement = event.relatedTarget
-	var dropzoneElement = event.target
+  },
+  ondragenter: function (event) {
+   var draggableElement = event.relatedTarget
+   var dropzoneElement = event.target
 
     // feedback the possibility of a drop
     dropzoneElement.classList.add('drop-target')
     draggableElement.classList.add('can-drop')
     // draggableElement.textContent = 'Dragged in'
     console.log("dragged in");
-},
-ondragleave: function (event) {
-    // remove the drop feedback style
-    event.target.classList.remove('drop-target')
-    event.relatedTarget.classList.remove('can-drop')
-    // event.relatedTarget.textContent = 'Dragged out'
-},
-ondrop: function (event) {
-  var draggableElement = event.relatedTarget;
-  draggableElement.classList.remove('int');
-},
-ondropdeactivate: function (event) {
-    // remove active dropzone feedback
-    event.target.classList.remove('drop-active')
-    event.target.classList.remove('drop-target')
-}
+  },
+  ondrop: function (event) {
+    var draggableElement = event.relatedTarget;
+    draggableElement.classList.remove('int');
+    completed++;
+    console.log("detected");
+
+    if(completed == 1){
+      // call function to go to the end of the slide
+      $(".slide-3").removeClass('d-none');
+      console.log("completed course");
+    }
+  }
 })
+
+}
 
