@@ -26,6 +26,10 @@ svg{
 	&>div{
 		@include abs-l0t0;
 	}
+
+	.btn{
+		cursor: pointer;
+	}
 }
 
 .slide-1{
@@ -33,9 +37,6 @@ svg{
 	.start{
 		z-index: 5;
 		background:rgba(0,0,0,0.5);
-	}
-	#start_x5F_button_xA0_Image{
-		cursor: pointer;
 	}
 }
 
@@ -62,7 +63,7 @@ svg{
 		@include abs-l0t0;
 		display: flex;
 		justify-content: space-around;
-		
+
 	}
 
 	.drop{
@@ -109,8 +110,11 @@ svg{
 	}
 }
 
-.no-touch{
-	pointer-action:none;
+.slide-3{
+	z-index:10;
+	.feedback{
+		background: rgba(0,0,0,0.5);
+	}
 }
 
 
