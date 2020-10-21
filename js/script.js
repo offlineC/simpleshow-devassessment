@@ -103,7 +103,6 @@ function dropE(el){
     // feedback the possibility of a drop
     dropzoneElement.classList.add('drop-target')
     draggableElement.classList.add('can-drop')
-    // draggableElement.textContent = 'Dragged in'
     console.log("dragged in");
   },
   ondrop: function (event) {
