@@ -1,6 +1,5 @@
 $(function() {
     course.init();
-    tester.init()
 });
 
 var course = {
@@ -20,10 +19,25 @@ var course = {
             $(this).closest('.slide').addClass("d-none");
             $(".hanger").addClass("d-none");
             $(".slide-2").removeClass('d-none');
-            course.dropSize();
+            course.dropInit();
+            course.partsInit();
         });
     },
-    dropSize: function() {
+    partsInit: function() {
+        var allParts = $(".hidden").length;
+        var partsPush = [];
+        for (i = 0; i < allParts; i++) {
+            partsPush.push($(".hidden").eq(i).attr("ref"));
+            var pos = $('g[ref="' + partsPush[i] + '"]').offset();
+            var left = pos.left;
+            var top = pos.top;
+            $('.' + partsPush[i]).css({
+                left: left,
+                top: top
+            });
+        }
+    },
+    dropInit: function() {
         var allParts = $(".draggable").length;
         for (i = 0; i < allParts; i++) {
             var partsPush = $(".draggable").eq(i).attr("part-name");
@@ -32,7 +46,6 @@ var course = {
             $("#" + partsPush).css({
                 width: partw + 'px',
                 height: parth + 'px',
-                background: 'rgba(255,255,0,0.3)'
             });
         }
     },
@@ -113,17 +126,8 @@ var course = {
     },
     resize: function() {
         $(window).on('resize', function() {
-            var allParts = $(".draggable").length;
-            for (i = 0; i < allParts; i++) {
-                var partsPush = $(".draggable").eq(i).attr("part-name");
-                var partw = $("." + partsPush).outerWidth();
-                var parth = $("." + partsPush).outerHeight();
-                $("#" + partsPush).css({
-                    width: partw + 'px',
-                    height: parth + 'px',
-                    background: 'rgba(255,255,0,0.3)'
-                });
-            }
+            course.dropInit();
+            course.partsInit();
         });
     }
 
@@ -132,6 +136,8 @@ var course = {
 var tester = {
     init: function(el) {
         tester.elSize(el);
+        tester.startC();
+        // tester.partsInit();
     },
     elSize: function(el) {
         el.on('click', function() {
@@ -143,5 +149,22 @@ var tester = {
             // console.log((top.top/height)*100 + " top %");
             console.log(top.top + " top px");
         });
+    },
+    startC: function() {
+        course.startBtn.click();
+    },
+    partsInit: function() {
+        var allParts = $(".hidden").length;
+        var partsPush = [];
+        for (i = 0; i < allParts; i++) {
+            partsPush.push($(".hidden").eq(i).attr("ref"));
+            var pos = $('g[ref="' + partsPush[i] + '"]').offset();
+            var left = pos.left;
+            var top = pos.top;
+            $('.' + partsPush[i]).css({
+                left: left,
+                top: top
+            });
+        }
     }
 }

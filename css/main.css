@@ -2130,6 +2130,9 @@ svg {
     z-index: 5;
     background: rgba(0, 0, 0, 0.5); }
 
+.slide-2 .hidden {
+  opacity: 0; }
+
 .slide-2 .instruction {
   z-index: 5; }
 
@@ -2145,48 +2148,55 @@ svg {
 
 .slide-2 .draggable {
   position: absolute;
-  touch-action: none;
-  background: rgba(0, 0, 0, 0.2);
-  opacity: 0.5; }
+  touch-action: none; }
 
 .slide-2 .dropoff {
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: space-around; }
+  height: 100%; }
+
+.slide-2 .drop {
+  top: 0;
+  left: 0;
+  position: absolute; }
 
 .movable .arm-l {
-  width: 6.75%;
-  left: 78%;
-  top: 17.75%; }
+  width: 6.75%; }
 
 .movable .arm-r {
-  width: 6.7%;
-  left: 85%;
-  top: 17.75%; }
+  width: 6.7%; }
 
 .movable .chest {
-  width: 15%;
-  left: 63.36%;
-  top: 225.35px; }
+  width: 15%; }
 
 .movable .head {
-  width: 6.5%;
-  left: 64.80%;
-  top: 52.51%; }
+  width: 6.5%; }
 
 .movable .leg-l {
-  width: 6.25%;
-  left: 10%;
-  top: 10%; }
+  width: 6.25%; }
 
 .movable .leg-r {
-  width: 6.25%;
-  left: 30%;
-  top: 30%; }
+  width: 6.25%; }
+
+.dropoff #arm-l {
+  transform: translate(334%, 52%); }
+
+.dropoff #arm-r {
+  transform: translate(594%, 52%); }
+
+.dropoff #chest {
+  transform: translate(182.5%, 121%); }
+
+.dropoff #head {
+  transform: translate(486%, 50%); }
+
+.dropoff #leg-l {
+  transform: translate(437%, 121%); }
+
+.dropoff #leg-r {
+  transform: translate(576%, 121%); }
 
 .slide-3 {
   z-index: 10; }
