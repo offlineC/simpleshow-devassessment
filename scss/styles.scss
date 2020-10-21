@@ -60,10 +60,13 @@ svg{
 
 	.dropoff{
 		@include abs-l0t0;
+		display: flex;
+		justify-content: space-around;
+		
 	}
 
 	.drop{
-		position: absolute;
+		
 	}
 }
 
