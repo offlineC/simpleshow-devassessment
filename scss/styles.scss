@@ -1,3 +1,8 @@
+@font-face {
+	font-family: simpleshow;
+	src: url('../assets/simpleshow-Font_2013-06-27.ttf');
+}
+
 svg {
     width: 100%;
     height: auto;
@@ -25,10 +30,6 @@ svg {
 
     &>div {
         @include abs-l0t0;
-    }
-
-    .btn {
-        cursor: pointer;
     }
 }
 
@@ -76,7 +77,7 @@ svg {
 }
 
 
-.movable {
+.parts {
     .arm-l {
         width: 6.75%;
     }
@@ -99,6 +100,7 @@ svg {
 
     .leg-r {
         width: 6.25%;
+        // transform: translate(944%, 95%);
     }
 }
 
@@ -137,6 +139,9 @@ svg {
     }
 }
 
+.btn{
+	cursor: pointer;
+}
 
 .d-none {
     display: none;

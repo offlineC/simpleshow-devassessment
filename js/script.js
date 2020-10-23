@@ -1,5 +1,6 @@
 $(function() {
     course.init();
+    tester.init($('.hidden'));
 });
 
 var course = {
@@ -7,6 +8,7 @@ var course = {
     startBtn: $('#start_x5F_button_xA0_Image'),
     init: function() {
         course.listening();
+        $('.parts img').attr('draggable', false);
     },
     listening: function() {
         course.start();
@@ -31,9 +33,10 @@ var course = {
             var pos = $('g[ref="' + partsPush[i] + '"]').offset();
             var left = pos.left;
             var top = pos.top;
+            var offsetDiff = ($(window).width() - $('.parts').width())/2;
             $('.' + partsPush[i]).css({
-                left: left,
-                top: top
+                left: left-offsetDiff + 'px',
+                top: top + 'px'
             });
         }
     },
@@ -105,7 +108,6 @@ var course = {
                 accept: '.' + el,
                 // Require a 75% element overlap for a drop to be possible
                 overlap: 0.9,
-
                 ondrop: function(event) {
                     var draggableElement = event.relatedTarget;
                     draggableElement.classList.remove('int');
@@ -137,13 +139,14 @@ var tester = {
     init: function(el) {
         tester.elSize(el);
         tester.startC();
-        // tester.partsInit();
+        tester.toEnd();
     },
     elSize: function(el) {
         el.on('click', function() {
             var left = $(this).offset();
             var width = $(window).width();
-            console.log((left.left / width) * 100 + " left %");
+            // console.log((left.left / width) * 100 + " left %");
+            console.log(left.left + " left px");
             var top = $(this).offset();
             var height = $(window).height();
             // console.log((top.top/height)*100 + " top %");
@@ -152,6 +155,18 @@ var tester = {
     },
     startC: function() {
         course.startBtn.click();
+    },
+    hide: function(){
+      $('body').append('<button class="hide-int" style="width:100px;height:100px;background:yellow">hide parts</button>');
+      $('.hide-int').on('click', function(){
+        $(".movable, .instruction").addClass('d-none');
+      });
+    },
+    toEnd: function(){
+      $('body').append('<button class="hide-int" style="width:100px;height:100px;background:#f00;color:#fff">end</button>');
+      $('.hide-int').on('click', function(){
+        course.end();
+      });
     },
     partsInit: function() {
         var allParts = $(".hidden").length;
@@ -166,5 +181,6 @@ var tester = {
                 top: top
             });
         }
-    }
+    },
+
 }
