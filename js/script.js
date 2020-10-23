@@ -1,6 +1,5 @@
 $(function() {
     course.init();
-    tester.init($('.hidden'));
 });
 
 var course = {
