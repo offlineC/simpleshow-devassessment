@@ -1,9 +1,14 @@
 @font-face {
-	font-family: simpleshow;
-	src: url('../assets/simpleshow-Font_2013-06-27.ttf');
+    font-family: simpleshow;
+    src: url('../assets/simpleshow-Font_2013-06-27.ttf');
 }
 
 svg {
+    width: 100%;
+    height: auto;
+}
+
+img {
     width: 100%;
     height: auto;
 }
@@ -20,7 +25,7 @@ svg {
     width: 100%;
     height: 100vh;
     position: relative;
-    max-width: 1350px;
+    max-width: 1280px;
     max-height: 760px;
     margin: auto;
 }
@@ -100,7 +105,6 @@ svg {
 
     .leg-r {
         width: 6.25%;
-        // transform: translate(944%, 95%);
     }
 }
 
@@ -137,10 +141,23 @@ svg {
     .feedback {
         background: rgba(0, 0, 0, 0.5);
     }
+
+    .end {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #fff;
+        transition: all 1s;
+
+        img {
+            width: 100%;
+            max-width: 1000px;
+        }
+    }
 }
 
-.btn{
-	cursor: pointer;
+.btn {
+    cursor: pointer;
 }
 
 .d-none {

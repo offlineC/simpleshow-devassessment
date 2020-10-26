@@ -8,6 +8,10 @@ var course = {
     init: function() {
         course.listening();
         $('.parts img').attr('draggable', false);
+        $('.end').css({
+            display: 'none',
+            opacity: '0'
+        });
     },
     listening: function() {
         course.start();
@@ -122,7 +126,10 @@ var course = {
     end: function() {
         $('.slide-3').removeClass('d-none');
         $('.feedback .btn').on('click', function() {
-            $(this).closest('.feedback').addClass('d-none');
+            $('.end').css('display', 'flex');
+            setTimeout(function(){
+                $('.end').css('opacity', 1);
+            }, 500);
         });
     },
     resize: function() {
@@ -134,6 +141,9 @@ var course = {
 
 }
 
+
+// set functions here for testing
+// calling the functions directly speeds up testing time
 var tester = {
     init: function(el) {
         tester.elSize(el);
@@ -166,6 +176,9 @@ var tester = {
       $('.hide-int').on('click', function(){
         course.end();
       });
+    },
+    fEnd: function(){
+        course.end();
     },
     partsInit: function() {
         var allParts = $(".hidden").length;
